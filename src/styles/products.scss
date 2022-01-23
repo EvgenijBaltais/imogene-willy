@@ -1,0 +1,20 @@
+.products {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products-item {
+    width: calc((100% - 40px) / 3);
+    height: 500px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    outline: 1px solid #ccc;
+    background: #ccc;
+    background-size: 'cover';
+}
+
+.products-item:nth-child(3n) {
+    margin-right: 0
+}
