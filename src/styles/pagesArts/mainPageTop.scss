@@ -1,0 +1,17 @@
+.main-page-art {
+    position: relative;
+    margin-top: -100px;
+    height: 1200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main-page-art__shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0,0,0,.6);
+}

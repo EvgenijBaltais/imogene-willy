@@ -3,8 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import { PageTransition } from '@steveeeie/react-page-transition';
 
 import TopInfo from './components/TopInfo';
-import Navbar from './components/Navbar';
-import MainCarousel from './components/MainCarousel';
+import LogoSection from './components/LogoSection';
 
 import Home from './pages/Home'
 import Bonsai from './pages/Bonsai'
@@ -16,10 +15,9 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="wrapper">
         <TopInfo />
-        <Navbar />
-        <MainCarousel />
+        <LogoSection />
 
           <Routes>
             <Route path = {"/"} element = {<Home />} />

@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
-    background-color: #f6f1e4;
+    height: 45px;
+    color: #fff;
+    background-color: #D4651F;
     text-align: center;
 }
 
@@ -11,16 +12,4 @@
     text-transform: uppercase;
     font-size: 12px;
     line-height: 14px;
-}
-
-.main-logo {
-    width: 250px;
-}
-
-.main-nav {
-    width: calc(100% - 500px);
-}
-
-.main-phone {
-    width: 250px;
 }
