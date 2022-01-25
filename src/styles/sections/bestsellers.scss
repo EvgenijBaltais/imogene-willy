@@ -1,0 +1,14 @@
+.bestsellers {
+    display: flex;
+}
+
+.bestsellers-item {
+    width: calc((100% - 75px) / 4);
+    min-height: 200px;
+    margin-right: 25px;
+    outline: 1px solid#ccc;
+}
+
+.bestsellers-item:nth-child(4n) {
+    margin-right: 0;
+}
