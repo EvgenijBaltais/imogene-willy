@@ -1,9 +1,10 @@
 .main-page-art {
     position: relative;
-    margin-top: -100px;
+    margin-top: -150px;
     height: 1200px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
 }
 
 .main-page-art__shadow {
@@ -15,3 +16,47 @@
     margin: auto;
     background-color: rgba(0,0,0,.6);
 }
+
+/* Блок со слоганом */
+
+.main-page-slogan {
+    text-align: center;
+    margin-top: 300px
+}
+
+.main-page-slogan__big {
+    color: #fff;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+.main-page-slogan__dop {
+    color: #B7B6B6;
+    font-size: 20px;
+    margin-bottom: 20px
+}
+
+.main-page-slogan__btn {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 50px;
+    color: #000;
+    text-transform: uppercase;
+    background: #fff;
+    border-radius: 15px;
+    outline: 0!important;
+    border: 0!important;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color .3s;
+}
+
+.main-page-slogan__btn:hover {
+    background: #B7B6B6;
+    transition: background-color .3s;
+}
+
+/* Блок со слоганом, конец */
