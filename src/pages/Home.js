@@ -2,6 +2,7 @@ import React from "react";
 
 import MainPageTop from "../components/pagesArts/MainPageTop";
 import Bestsellers from "../components/sections/Bestsellers";
+import WhyWe from "../components/sections/WhyWe";
 
 const Home = () => {
 
@@ -9,6 +10,7 @@ const Home = () => {
         <>
             <MainPageTop />
             <Bestsellers />
+            <WhyWe />
         </>
     )
 }
