@@ -1,0 +1,47 @@
+.advices {
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../assets/images/advices.png');
+}
+
+.advices-inside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0,.5);
+}
+
+.advices-title {
+    display: block;
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.advices-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 45px;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 45px;
+    font-weight: bold;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #D4651F;
+}

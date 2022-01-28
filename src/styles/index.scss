@@ -48,8 +48,30 @@ li {
 }
 
 .section-size {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
 /* Общие классы, конец */
+
+/* Section */
+
+.section {
+  padding-top: 90px
+}
+
+.section-title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 34px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #63584C;
+}
+
+.section-info {
+  text-align: center;
+  color: #939292
+}
+
+/* Section, конец */

@@ -1,9 +1,11 @@
 import React, {useState} from "react"
 
 import '../../styles/sections/bestsellers.scss'
-import BestsellersItem from "./BestsellersItem"
+import ProductCard from "./ProductCard"
 
 const Bestsellers = () => {
+
+    const imgPathName = 'bestsellers'
 
     const bestsellers = [
         {id: 0, title: 'Silver Bartender Kit with Rustic Wood Stand', img: 'crate', price: '8900'},
@@ -15,11 +17,11 @@ const Bestsellers = () => {
     //new Array(4).fill('').map((_, i) => (i))
 
     return (
-        <section className="bestsellers-section">
-            <h2 className="bestsellers-title">Выбор покупателей</h2>
-            <p className="bestsellers-info">Удивите своих друзей оригинальным подарком</p>
+        <section className="section bestsellers-section">
+            <h2 className="section-title">Выбор покупателей</h2>
+            <p className="section-info">Удивите своих друзей оригинальным подарком</p>
             <div className="bestsellers section-size">
-                {bestsellers.map((item, index) => <BestsellersItem items = {item} key = {index} />)}
+                {bestsellers.map((item, index) => <ProductCard items = {item} path = {imgPathName} key = {index} />)}
             </div>
         </section>
     )
