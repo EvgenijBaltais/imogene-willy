@@ -29,7 +29,7 @@ const MainNav = () => {
                     </NavLink>
                 </li>
                 <li className = "main-nav-item">
-                    <NavLink className = "main-nav-link" to = "/">
+                    <NavLink className = "main-nav-link" to = "/contacts">
                         Контакты
                     </NavLink>
                 </li>

@@ -1,12 +1,13 @@
 import React from "react";
-import '../styles/contacts.scss'
-
+import AdditionalPageTop from "../components/pagesArts/AdditionalPageTop";
+import '../styles/pagesArts/additionalPageTop.scss'
 
 const Contacts = () => {
 
     return (
         <div className = "contacts-wrapper">
             
+            <AdditionalPageTop />
         </div>
     )
 }

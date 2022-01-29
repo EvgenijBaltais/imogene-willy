@@ -11,6 +11,7 @@ import Giftsets from './pages/Giftsets'
 import Catalog from './pages/Catalog';
 import Contacts from './pages/Contacts';
 import NotFound from './pages/NotFound';
+import Footer from './components/sections/Footer';
 
 function App() {
   return (
@@ -27,8 +28,8 @@ function App() {
             <Route path = {"/contacts"} element = {<Contacts />} />
             <Route path= "*" element = {<NotFound />} />
           </Routes>
-          
       </div>
+        <Footer />
     </BrowserRouter>
   )
 }
