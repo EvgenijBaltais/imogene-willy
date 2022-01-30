@@ -11,6 +11,7 @@ import Giftsets from './pages/Giftsets'
 import Catalog from './pages/Catalog';
 import Contacts from './pages/Contacts';
 import NotFound from './pages/NotFound';
+import Subscribe from "../components/sections/Subscribe";
 import Footer from './components/sections/Footer';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path= "*" element = {<NotFound />} />
           </Routes>
       </div>
+        <Subscribe/>
         <Footer />
     </BrowserRouter>
   )
