@@ -14,18 +14,8 @@ const MainNav = () => {
                     </NavLink>
                 </li>
                 <li className = "main-nav-item">
-                    <NavLink className = "main-nav-link" to = "/">
-                        Наборы
-                    </NavLink>
-                </li>
-                <li className = "main-nav-item">
-                    <NavLink className = "main-nav-link" to = "/">
-                        Бонсай
-                    </NavLink>
-                </li>
-                <li className = "main-nav-item">
-                    <NavLink className = "main-nav-link" to = "/">
-                        Шары и открытки
+                    <NavLink className = "main-nav-link" to = "/catalog">
+                        Каталог
                     </NavLink>
                 </li>
                 <li className = "main-nav-item">
