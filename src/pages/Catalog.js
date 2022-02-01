@@ -24,19 +24,19 @@ const Catalog = () => {
                         <ul className="catalog-select__list">
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-1" />
-                                <label for="checkbox-id-1">Bartender Kits</label>
+                                <label htmlFor="checkbox-id-1">Bartender Kits</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-2" />
-                                <label for="checkbox-id-2">Glassware</label>
+                                <label htmlFor="checkbox-id-2">Glassware</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-3" />
-                                <label for="checkbox-id-3">Travel Kits</label>
+                                <label htmlFor="checkbox-id-3">Travel Kits</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-4" />
-                                <label for="checkbox-id-4">Whiskey Sets</label>
+                                <label htmlFor="checkbox-id-4">Whiskey Sets</label>
                             </li>
                         </ul>
                     </div>
@@ -46,23 +46,23 @@ const Catalog = () => {
                         <ul className="catalog-select__list">
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-5" />
-                                <label for="checkbox-id-5">Bamboo</label>
+                                <label htmlFor="checkbox-id-5">Bamboo</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-6" />
-                                <label for="checkbox-id-6">Black</label>
+                                <label htmlFor="checkbox-id-6">Black</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-7" />
-                                <label for="checkbox-id-7">Mahogany</label>
+                                <label htmlFor="checkbox-id-7">Mahogany</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-8" />
-                                <label for="checkbox-id-8">Rustic Wood</label>
+                                <label htmlFor="checkbox-id-8">Rustic Wood</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-9" />
-                                <label for="checkbox-id-9">Stainless Steel</label>
+                                <label htmlFor="checkbox-id-9">Stainless Steel</label>
                             </li>
                         </ul>
                     </div>
@@ -72,19 +72,19 @@ const Catalog = () => {
                         <ul className="catalog-select__list">
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-11" />
-                                <label for="checkbox-id-10">Copper</label>
+                                <label htmlFor="checkbox-id-10">Copper</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-12" />
-                                <label for="checkbox-id-12">Gold</label>
+                                <label htmlFor="checkbox-id-12">Gold</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-13" />
-                                <label for="checkbox-id-13">Gunmetal Black</label>
+                                <label htmlFor="checkbox-id-13">Gunmetal Black</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-14" />
-                                <label for="checkbox-id-14">Stainless Steel</label>
+                                <label htmlFor="checkbox-id-14">Stainless Steel</label>
                             </li>
                         </ul>
                     </div>
@@ -94,26 +94,26 @@ const Catalog = () => {
                         <ul className="catalog-select__list">
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-15" />
-                                <label for="checkbox-id-15">Beginners</label>
+                                <label htmlFor="checkbox-id-15">Beginners</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-16" />
-                                <label for="checkbox-id-16">Gifting</label>
+                                <label htmlFor="checkbox-id-16">Gifting</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-17" />
-                                <label for="checkbox-id-17">Professionals</label>
+                                <label htmlFor="checkbox-id-17">Professionals</label>
                             </li>
                             <li className="catalog-select__item">
                                 <input className="custom-checkbox" type="checkbox" id="checkbox-id-18" />
-                                <label for="checkbox-id-18">Travel</label>
+                                <label htmlFor="checkbox-id-18">Travel</label>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="main-catalog-items">
 
-                    {products.map((item, index) => <MainCatalogItem value = {products} key = {index} />)}
+                    {products.map((item, index) => <MainCatalogItem products = {item} key = {index} />)}
 
                 </div>
             </div>
