@@ -2,3 +2,24 @@
     transition: opacity 5s;
     opacity: 1;
 }
+
+.main-catalog-items {
+    display: flex;
+  }
+  
+  .main-catalog-item {
+    margin-right: 30px;
+  }
+  
+  .main-catalog-item__pic {
+    background-image: url('../assets/images/products/1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    outline: 1px solid red;
+  }
+  
+  .main-catalog-item:nth-child(3n) {
+    margin-right: 0;
+  }

@@ -8,10 +8,6 @@
     padding-right: 20px;
 }
 
-.catalog-item {
-    width: calc(100% - 310px);
-}
-
 .catalog-select__title {
     font-size: 20px;
     line-height: 20px;
@@ -95,3 +91,39 @@
   }
 
 /* Стилизация чекбоксов, конец */
+
+
+.main-catalog-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 310px);
+}
+
+.main-catalog-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc(33% - 20px);
+}
+
+.main-catalog-item__pic {
+  background-image: url('../assets/images/products/1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+
+.main-catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.main-catalog-item__title {
+  padding: 10px 0;
+  text-align: center;
+  color: rgb(108,97,86);
+  font-weight: bold;
+}
+
+.main-catalog-item__price {
+  text-align: center;
+}
