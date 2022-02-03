@@ -13,6 +13,8 @@ import Contacts from './pages/Contacts';
 import NotFound from './pages/NotFound';
 import Subscribe from "./components/sections/Subscribe";
 import Footer from './components/sections/Footer';
+import Product from './pages/Product';
+
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
           <Routes>
             <Route path = {"/"} element = {<Home />} />
             <Route path = {"/catalog"} element = {<Catalog />} />
+            <Route path = {"/catalog/:product_id"} element = {<Product />} />
             <Route path = {"/bonsai"} element = {<Bonsai />} />
             <Route path = {"/giftsets"} element = {<Giftsets />} />
             <Route path = {"/contacts"} element = {<Contacts />} />
