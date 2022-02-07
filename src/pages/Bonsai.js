@@ -1,40 +1,54 @@
-import React, {Fragment} from "react";
+import React, {useState, useEffect, Fragment} from "react";
+import axios from 'axios';
 
+class Bonsai extends React.Component {
 
-const Bonsai = (props) => {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            products: []
+        }
+    }
 
-    const value = 1
+    componentDidMount(){
 
-    return (
+        axios.get(`//flowers.home-trees.ru/db.php`)
+        .then(res => {
+          const people = JSON.parse(res.data)
+          //this.setState = people
 
-        <>
-        {value}
-        </>
-    )
+          console.log(people)
+        })
+    }
+
+    render(){
+        return (
+
+            <div>{this.state.products.map((index, item) => <div>{item}</div>)}</div>
+        )
+    }
 }
+
+
+
+export default Bonsai
+
+
+
 
 /*
 class Bonsai extends React.Component {
 
-
     constructor(props) {
-        super(props)
 
-        this.value = 1
+        super(props)
+        this.test = 'test'
     }
 
     render() {
-
-
-        const value = this.value
-
         return (
-            <>
-                {value}
-            </>
+            <>{this.test}</>
         )
     }
-}
-*/
-
-   export default Bonsai
+}*/
