@@ -3,6 +3,7 @@ import '../styles/main-catalog.scss'
 import '../styles/pagesArts/additionalPageTop.scss'
 import AdditionalPageTop from "../components/pagesArts/AdditionalPageTop";
 import MainCatalogItem from "../components/MainCatalogItem";
+import Product_form from "../components/Product_form";
 
 const Catalog = () => {
 
@@ -117,6 +118,8 @@ const Catalog = () => {
 
                 </div>
             </div>
+
+            <Product_form />
         </>
     )
 }

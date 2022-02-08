@@ -1,0 +1,38 @@
+.overlay {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    z-index: 99999;
+}
+
+.product-form-w {
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    max-width: 1170px;
+    padding: 20px 50px;
+    max-width: 660px;
+    margin: 65px auto;
+    background: #fff;
+}
+
+.close-product-form {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/images/icons/close.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

@@ -10,7 +10,7 @@ class Bonsai extends React.Component {
             products: []
         }
     }
-
+/*
     componentDidMount(){
 
         axios.get(`//flowers.home-trees.ru/db.php`)
@@ -21,7 +21,7 @@ class Bonsai extends React.Component {
           console.log(people)
         })
     }
-
+*/
     render(){
         return (
 
