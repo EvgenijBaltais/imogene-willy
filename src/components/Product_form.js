@@ -41,10 +41,8 @@ class Product_form extends React.Component {
         return (
 
             <div className="overlay">
-
                 <div className="product-form-w">
-                    <div className="close-product-form" onclick = ""></div>
-
+                    <div className="close-product-form"></div>
                     <div className="foto-slider"></div>
                     <div className="form-content"></div>
                     <form action="">

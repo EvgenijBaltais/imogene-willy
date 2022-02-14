@@ -9,7 +9,6 @@ const ProductCard = (props) => {
         <>
             <div className="product-card-item">
                 <div className = "product-card-item__pic-w">
-
                     <img className = "product-card-item__pic" src={require(`../../assets/images/${props.path}/${props.items.id + 1}.jpg`)} />
                 </div>
                 <div className = "product-card-item__title">{props.items.title}</div>

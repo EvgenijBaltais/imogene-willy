@@ -1,6 +1,8 @@
 import React, {useState, useEffect, Fragment} from "react";
 import axios from 'axios';
 
+import products from '../products'
+
 class Bonsai extends React.Component {
 
     constructor(props) {
@@ -10,18 +12,24 @@ class Bonsai extends React.Component {
             products: []
         }
     }
-/*
+
     componentDidMount(){
 
-        axios.get(`//flowers.home-trees.ru/db.php`)
+        console.log(products)
+/*
+        axios.get("/imogene-willy/db.php", {
+            headers: {
+              'Access-Control-Allow-Origin': '*'
+            }
+          })
         .then(res => {
           const people = JSON.parse(res.data)
           //this.setState = people
 
           console.log(people)
-        })
+        })*/
     }
-*/
+
     render(){
         return (
 

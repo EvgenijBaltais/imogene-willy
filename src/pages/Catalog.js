@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import '../styles/main-catalog.scss'
 import '../styles/pagesArts/additionalPageTop.scss'
 import AdditionalPageTop from "../components/pagesArts/AdditionalPageTop";
@@ -7,13 +7,14 @@ import Product_form from "../components/Product_form";
 
 const Catalog = () => {
 
-
     const products = [
         {id: 0, title: 'Silver Bartender Kit with Rustic Wood Stand', price: '8900'},
         {id: 1, title: 'Whiskey Glasses Gift Set of 4 Rocks Glasses with a Classy Gift Box', price: '4900'},
         {id: 2, title: 'Gun Metal Black Cocktail Shaker Bartender Kit with Stylish Mahogany Stand', price: '5300'},
         {id: 3, title: 'Whiskey Stones Gift Set for Men and Women with Wooden Box and Velvet Bag', price: '2800'}
-    ] 
+    ]
+
+    let [form_active, changeForm] = useState(0)
 
     return (
         <>
@@ -119,7 +120,7 @@ const Catalog = () => {
                 </div>
             </div>
 
-            <Product_form />
+            {form_active ?? (<Product_form />)}
         </>
     )
 }

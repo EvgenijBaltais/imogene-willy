@@ -8,15 +8,11 @@ const Product_item = () => {
 
     let [hovering, setState] = useState(0);
     
-    console.log(hovering)
-
     return (
         <>
-
             <div
             className = "products-item"
             style = {{ backgroundImage: `url(${Background})` }}></div>
-
         </>
     )
 }
