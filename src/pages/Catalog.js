@@ -12,7 +12,10 @@ const Catalog = () => {
     let [form_active, changeForm] = useState(0)
 
     let updateData = (value) => {
-        this.setState({name: value})
+
+       this.setState(state => {
+            return {form_active : value}
+       })
     }
 
     return (
@@ -114,7 +117,7 @@ const Catalog = () => {
                 </div>
                 <div className="main-catalog-items">
 
-                    {products.map((item, index) => <MainCatalogItem updateData = {this.updateData} products = {item} key = {item.id} />)}
+                    {products.map((item, index) => <MainCatalogItem updateData={updateData} products = {item} key = {item.id} />)}
 
                 </div>
             </div>

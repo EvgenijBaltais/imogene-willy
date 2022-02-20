@@ -8,12 +8,14 @@ const MainCatalogItem = (props) => {
         location = useLocation(),
         product_id = 1
 
+        console.log(props.updateData)
+
 
     return (
         <div className="main-catalog-item">
             <div className = "main-catalog-item__pic" style = {{backgroundImage: backGroundImage}}>
                 <div className="watch-item-preview">
-                    <button className="watch-item-preview__btn">Подробнее</button>
+                    <button className="watch-item-preview__btn" onClick={() => { props.updateData({ form_active: 1 })}}>Подробнее</button>
                 </div>
             </div>
             <NavLink to = {`${location.pathname}/${product_id}`} className = "main-catalog-item__title">{props.products.name}</NavLink>
