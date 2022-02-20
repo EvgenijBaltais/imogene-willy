@@ -5,16 +5,15 @@ import AdditionalPageTop from "../components/pagesArts/AdditionalPageTop";
 import MainCatalogItem from "../components/MainCatalogItem";
 import Product_form from "../components/Product_form";
 
+import products from '../products'
+
 const Catalog = () => {
 
-    const products = [
-        {id: 0, title: 'Silver Bartender Kit with Rustic Wood Stand', price: '8900'},
-        {id: 1, title: 'Whiskey Glasses Gift Set of 4 Rocks Glasses with a Classy Gift Box', price: '4900'},
-        {id: 2, title: 'Gun Metal Black Cocktail Shaker Bartender Kit with Stylish Mahogany Stand', price: '5300'},
-        {id: 3, title: 'Whiskey Stones Gift Set for Men and Women with Wooden Box and Velvet Bag', price: '2800'}
-    ]
-
     let [form_active, changeForm] = useState(0)
+
+    let updateData = (value) => {
+        this.setState({name: value})
+    }
 
     return (
         <>
@@ -115,12 +114,12 @@ const Catalog = () => {
                 </div>
                 <div className="main-catalog-items">
 
-                    {products.map((item, index) => <MainCatalogItem products = {item} key = {index} />)}
+                    {products.map((item, index) => <MainCatalogItem updateData = {this.updateData} products = {item} key = {item.id} />)}
 
                 </div>
             </div>
 
-            {form_active ?? (<Product_form />)}
+            {form_active ? <Product_form /> : ''}
         </>
     )
 }

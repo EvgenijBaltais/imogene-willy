@@ -4,11 +4,10 @@ import {useLocation} from 'react-router-dom'
 
 const MainCatalogItem = (props) => {
 
-    const backGroundImage = require(`../assets/images/products/${props.products.id + 1}.jpg`)
+    let backGroundImage = require(`../assets/images/products/${props.products.id}.jpg`),
+        location = useLocation(),
+        product_id = 1
 
-    let location = useLocation();
-
-    let product_id = 1
 
     return (
         <div className="main-catalog-item">
@@ -17,8 +16,8 @@ const MainCatalogItem = (props) => {
                     <button className="watch-item-preview__btn">Подробнее</button>
                 </div>
             </div>
-            <NavLink to = {`${location.pathname}/${product_id}`} className = "main-catalog-item__title">Bartender Kit in Gun Metal Black with Rustic Wood Stand</NavLink>
-            <div className = "main-catalog-item__price">$79.99</div>
+            <NavLink to = {`${location.pathname}/${product_id}`} className = "main-catalog-item__title">{props.products.name}</NavLink>
+            <div className = "main-catalog-item__price">${props.products.price}</div>
         </div>
     )
 }
